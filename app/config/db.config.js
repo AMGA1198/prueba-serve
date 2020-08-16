@@ -1,8 +1,8 @@
 module.exports = {
-  HOST: "localhost",
-  USER: "root",
-  PASSWORD: "123456",
-  DB: "testdb",
+  HOST: "45.33.78.30",
+  USER: "holyexpr_testdb",
+  PASSWORD: "holyexpress",
+  DB: "holyexpr_testdb",
   dialect: "mysql",
   pool: {
     max: 5,
