@@ -7,7 +7,7 @@ module.exports = app => {
   router.post("/", tutorials.create);
 
   // Retrieve all Tutorials
-  router.get("/", tutorials.findAll);
+  router.get("/all", tutorials.findAll);
 
   // Retrieve all published Tutorials
   router.get("/published", tutorials.findAllPublished);
@@ -16,13 +16,13 @@ module.exports = app => {
   router.get("/:id", tutorials.findOne);
 
   // Update a Tutorial with id
-  router.put("/:id", tutorials.update);
+  router.put("/put/:id", tutorials.update);
 
   // Delete a Tutorial with id
-  router.delete("/:id", tutorials.delete);
+  router.delete("/delete/:id", tutorials.delete);
 
   // Delete all Tutorials
-  router.delete("/", tutorials.deleteAll);
+  router.delete("/delete", tutorials.deleteAll);
 
   app.use('/api/tutorials', router);
 };
